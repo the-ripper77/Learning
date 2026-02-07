@@ -11,14 +11,19 @@
 if 5>2:
     print('i am five')
     
+    
 # Python Variable Example, used to store data values
 x = 5
 y = f'i am five'
+
+
 
 # Python Statements Example, a line of code that performs a specific action
 print(y)
 # there  is also a smemicolon (;) to separate multiple statements on the same line
 a = 10; b = 20; print(a + b) # This used rearly in python world
+
+
 
 # There are three types of comments in python
 # 1. Single-line comments
@@ -33,21 +38,43 @@ def example_function():
     """This is a docstring. It describes the function."""
     pass
 
+
+
 # python use both single and double quotes to define a string, but they must be used in pairs
 string1 = 'Hello, World!'
 string2 = "Hello, World!"
 print(string1)
 print(string2)
 
+
+
 #Casting is the process of converting one data type to another. In python, we can use the built-in functions to cast data types.`
 ''' For example, we can use the int() function to convert a string to an integer, the float() function to convert a string to a float, and the str() function to convert an integer or float to a string. '''
 string_number = '123'
 number = int(string_number) # This will convert the string '123' to the integer 123
 print(number  + 10) # This will print 133
+floe = float(string_number) # This will convert the string '123' to the float 123.0
+print(floe) # This will print 123.0
+
+
+float_number = '3.14'
+num = float(float_number) # This will convert the string '3.14' to the
+print(num)
+
+x = 2e2  # This is a float number in scientific notation, which is equivalent to 2 * 10^2 or 200.0
+result = str(x)
+
+print(result)        # Output: "20.0"
+print(type(result))  # Output: <class 'str'>
+
 
 # There are many inbuilt functions in python, such as print(), len(), type(), etc.
 print(len(string1)) # This will print the length of the string
 print(type(string1)) # This will print the type of the variable
+
+
+
+
 
 #Variables Nmaes in python must follow certain rules and conventions.
 # Legal variable names in python
@@ -81,3 +108,31 @@ Example of illegal variable names
 # 9. math = "John" # This is an illegal variable name, because it is the same as a module name in python
 # 10. myvaré = "John" # This is an illegal variable name, because it contains a non-ASCII character
 '''
+
+
+
+#Data Types in python
+# 1. Numeric Types: int, float, complex
+x = 5 # This is an integer, use for whole numbers, mostly used for counting and indexing, such as in loops, arrays, and database records
+y = 3.14 # This is a float number, use for decimal numbers, mostly used for scientific calculations and measurements, such as in physics, engineering, and finance
+z = 2 + 3j # This is a complex number, use for numbers that have a real part and an imaginary part, mostly used in engineering and physics, such as in electrical engineering and quantum mechanics
+# 2. Sequence Types: list, tuple, range
+my_list = [1, 2, 3, 4, 5] # This is a list use for ordered, changeable, and allows duplicate values, use for storing a collection of items that can be modified after creation, such as a list of names, a list of numbers, and a list of objects
+my_tuple = (1, 2, 3, 4, 5) # This is a tuple use for ordered, unchangeable, and allows duplicate values, use for storing a collection of items that should not be modified after creation, such as coordinates, RGB values, and database records
+my_range = range(1, 6) # This is a range object use for generating a sequence of numbers, mostly used in loops and iterations
+# 3. Text Type: str
+my_string = "Hello, World!" # This is a string use for storing text data, use for representing words, sentences, and other textual information, such as user input, file names, and URLs
+# 4. Mapping Type: dict
+my_dict = {"name": "John", "age": 30, "city": "New York"} # This is a dictionary, use for storing key-value pairs, use for representing structured data that can be accessed by keys rather than by index such as json data, configuration settings, and database records
+# 5. Set Types: set, frozenset
+my_set = {1, 2, 3, 4, 5} # This is a set, use for data that is unordered, unchangeable, and does not allow duplicate values, use for storing a collection of unique items such as a set of tags, a set of categories, and a set of unique values in a database
+my_frozenset = frozenset({1, 2, 3, 4, 5}) # This is a frozenset, use for data that is unordered, unchangeable, and does not allow duplicate values, use for storing a collection of unique items that should not be modified after creation such as a set of constants, a set of unique identifiers, and a set of unique values in a database that should not be modified after creation
+# 6. Boolean Type: bool
+my_bool = True # This is a boolean value, use for representing truth values, use for controlling the flow of a program based on certain conditions, such as in if statements, loops, and functions that return boolean values.
+my_bool2 = False # This is a boolean value, use for representing false values, use for controlling the flow of a program based on certain conditions, such as in if statements, loops, and functions that return boolean values.
+# 7. Binary Types: bytes, bytearray, memoryview
+my_bytes = b'Hello, World!' # This is a bytes object, use for storing binary data, use for representing data that is not human-readable, such as images, audio files, and network packets
+my_bytearray = bytearray(b'Hello, World!') # This is a bytearray object, use for storing binary data that can be modified after creation, use for representing data that is not human-readable, such as images, audio files, and network packets that need to be modified after creation
+my_memoryview = memoryview(b'Hello, World!') # This is a memoryview object, use for storing binary data that can be modified after creation, use for representing data that is not human-readable, such as images, audio files, and network packets that need to be modified after creation and accessed in a more efficient way than bytearray.
+
+
