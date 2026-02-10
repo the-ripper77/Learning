@@ -114,51 +114,71 @@ print(result)
 
 #partition()
 ab = f"Returns a tuple where the string is pairted into three parts"
+print(ab.partition('where'))
 
 #replace()
 ac = f"Returns a string where a specified value is replaced with a specified value"
+print(ac.replace('a', 'hehe'))
 
 #rfind()
 ad = f"Searches the string for a specified value and returns the last postion of where it was found"
+print(ad.rfind('it'))
 
 #rindex()
 ae = f"Searches the string for a specified value and returns the last postion of where it was found"
+print(ae.rindex('the'))
 
 #rjust()
 af = f"Returns a right justified version of this strings"
+print(af.rjust(10, "^"))
 
 #rpartition()
-ag = f"Returns a tuple where the string is parted into three parts" 
+ag = f"Returns-a-tuple-where-the-string-is-parted-into-three-parts" 
+print(ag.rpartition('-'))
 
 #rsplit()
-ah = f"Splits the string at the specified seperator, and returns a list"
+ah = f"Splits, the, string, at, the, specified, seperator, and, returns, a, list"
+print(ah.rsplit(',', 1))
 
 #rstrip()
-ai = f"Returns a right trim versin of the string"
+ai = f"Returns a right trim version of the string"
+print(ai.rstrip('string')) # will not strip from left like Returns will not be strip
 
 #split()
-aj = f"Splits the string at the specified seperator, and return list"
+aj = f"Splits, the, string, at, the, specified, seperator, and, return, list"
+print(aj.split(',',1))
 
 #splitlines()
-ak = f"Splits the string at line breaks and returns a lsit"
+ak = f"Splits\nthe\nstring\nat\nline\n breaks and returns a lsit"
+print(ak.splitlines())
 
 #startswith()
 al = f"Returns true if the string starts with the specified value"
+print(al.startswith('Returns'))
 
 #strip()
-am = f"Returns atrimmed version of the string"
+am = f"Returns a trimmed version of the string"
+print(am.strip('string'))
 
 #swapcase()
 an = f"Swaps cases, lower case becomes upper case and vice versa"
+print(an.swapcase())
 
 #title()
 ao = f"Converts the first character of each word to upper case"
+print(ao.title())
 
 #translate()
 ap = f"Returns a translated string"
+table = str.maketrans("", "", "aeiou") #none
+table1 = str.maketrans("aeiou", "AEIOU")
+table2 = {ord("t"): "T", ord("s"): "S"} #dictionary
+print(ap.translate(table))
 
 #upper()
 aq = f"Converts a string into upper case"
+print(aq.upper())
 
 #Zfill()
 ar = f"Fills the string with a specified number of 0 values at the begining"
+print(ar.zfill(70))
