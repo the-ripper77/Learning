@@ -1,0 +1,14 @@
+# Ignore all executable files
+*.exe
+*.out
+*.app
+
+# Ignore object files and libraries
+*.o
+*.obj
+*.a
+*.lib
+
+# Ignore build directories (if you use CMake or Make)
+/build/
+.vscode/
