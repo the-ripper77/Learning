@@ -136,3 +136,8 @@ my_bytearray = bytearray(b'Hello, World!') # This is a bytearray object, use for
 my_memoryview = memoryview(b'Hello, World!') # This is a memoryview object, use for storing binary data that can be modified after creation, use for representing data that is not human-readable, such as images, audio files, and network packets that need to be modified after creation and accessed in a more efficient way than bytearray.
 
 
+# python collections Arrays
+# 1. List: A list is a collection which is ordered and changeable. Allows duplicate members.
+# 2. Tuple: A tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# 3. Set: A set is a collection which is unordered and unchangeable. No duplicate members.
+# 4. Dictionary: A dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
